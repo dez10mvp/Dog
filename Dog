@@ -1,0 +1,102 @@
+/**
+ * My second class in BlueJ "Dog"
+ * AP CSA
+ * Desiree Carrizosa
+ * 10/30/17
+ */
+public class Dog
+{
+    // The Big Three
+     // 1. Instance Variables
+     private String name;
+     private String breed;
+     private int weight;  // in pounds
+     private int age;
+     
+     //2. Constructors - use the same name as the class
+     // zero-argument  constructor
+    
+    public Dog()
+    {
+        name = "none";
+        breed = null;
+        weight = 0;
+        age = 0;
+        
+    }// End zero arg constructor
+    
+    public Dog(String initialName, String initialBreed,
+                        int initialWeight, int initialAge)
+        { 
+            name = initialName;
+            breed = initialBreed;
+            weight = initialWeight;
+            age = initialAge;
+        } 
+        // Dymanic Duo
+        // #4 Getter Methods
+        
+        public int getWeight()
+        {
+          return weight;    
+        }// end method getWeight
+        
+        public String getBreed()
+        {
+            return breed;
+        }// end method getBreed
+        
+        public int getAge()
+        {
+            return age;
+        }// end method getAge
+        
+        // #5 Setters Methods
+        
+        public void setAge(int newAge)
+        {
+          age = newAge;  
+        }// end method setAge
+        
+        
+        //Brain Method
+        public String toPoundsKilo()
+        { 
+            //Create variables
+          int pounds;
+          int kilo;
+          String output = new String();
+          
+          //Calculate
+          pounds = weight / 2 ;
+          kilo = weight % 2;
+          
+          //Concatenate
+          output = pounds + "pounds and" + kilo + "kilograms" ;
+          
+          //Return the string 
+          return output;
+        }// end method toPoundsKilo
+        
+        // #3 toString Method
+        
+        public String toString()
+        {
+            String output = new String();
+            
+            output = "Name is: " + name + "\n" +
+                         "Breed is:" + breed + "\n" +
+                         "Weight is:" + weight + "\n" +
+                         "Age is:"  + age;
+                         
+              return output;
+            }// end toString method
+             
+           
+            
+     
+    }// End Class Dog 
+
+    
+    
+
