@@ -1,0 +1,33 @@
+/**
+ * CuteDog Driver
+ * Desiree Carrizosa
+ * 11/02/17
+ * AP CSA
+ */
+public class CuteDog 
+{
+    public static void main (String args[])
+    {
+        //1. Create a dog
+    Dog notADog = new Dog ();
+    Dog Cupcake = new Dog ("Cupcake", "Yorkie",55,4);
+    Dog Shadow = new Dog ("Shadow", "Huskie", 156, 7);
+    
+    // 2 Print the song using toString
+             /*
+        System.out.println(notAdog.toString()+"\n");
+        System.out.println(Cupcake.toString());
+        System.out.println(Shadow.toString());
+             **/
+    
+    System.out.println("The weight of Shadow is" + Shadow.getWeight());
+        //System.out.println("The breed of Shadow is" + Shadow.getBreed());
+        //Shadow.setAge(7);
+        //System.out.println("The age of the dog is" + Shadow.getAge());
+        
+        System.out.println(Shadow.toPoundsKilo());
+   
+
+    
+    }//end method main
+}//end CuteDog
